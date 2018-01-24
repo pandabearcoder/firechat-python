@@ -15,7 +15,7 @@ class Firechat():
             'id': new_room_ref.key,
             'name': room_name,
             'type': room_type,
-            'createdAt': datetime.now(),
+            'createdAt': datetime.now().timestamp(),
         }
 
         new_room_ref.set(room_info)
