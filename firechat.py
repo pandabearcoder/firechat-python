@@ -21,3 +21,6 @@ class Firechat():
         new_room_ref.set(room_info)
 
         return new_room_ref.key
+
+    def get_room_list(self):
+        return self._room_ref.get()
